@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+}
+header {
+  background-color: slateblue;
+  color: white;
+  text-align: left;
+}
+
+.logo img {
+  display:block;
+  width: 30%;
+  height: auto;
+  }
+  
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  color: blueviolet;
+  border: 1px solid #ccc;
+  text-align: center;
+  background-color:whitesmoke;
+  border-radius: 10px;
+  box-shadow: 7px 13px 37px blueviolet;
+}
+.container span{
+  color: black;
+}
+
+div a {
+  margin: 3px;
+}
+
+.header nav div ul li a {
+color:black;
+}
+
+.header nav div ul li a:hover{
+  transform: scale(1.1);
+  color: blueviolet;
+}
