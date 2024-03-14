@@ -9,12 +9,6 @@ body {
   margin: 20px;
 }
 
-.logo img {
-  display: block;
-  width: 30%;
-  height: auto;
-}
-
 .container {
   max-width: 600px;
   margin: 0 auto;
@@ -28,6 +22,17 @@ header {
   background-color: slateblue;
   color: white;
   text-align: left;
+}
+
+.header h2{
+  margin-left: 10px;
+
+}
+
+.logo img {
+  display: block;
+  width: 30%;
+  height: auto;
 }
 
 h1 {

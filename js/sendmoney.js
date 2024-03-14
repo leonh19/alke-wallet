@@ -4,8 +4,8 @@
     $("#sendmoney-form").submit(function(event) {
         event.preventDefault();
 
-        var destinatario = $("#destinatario").val();
-        var monto = $("#monto").val();
+        var destinatario = parseFloat ($("#destinatario").val());
+        var monto = parseFloat ($("#monto").val());
 
         // Validación de la información
         if (destinatario === "" || monto === "" || isNaN(monto)) {
@@ -33,3 +33,6 @@
         }, 2000);
     });
 });
+
+
+

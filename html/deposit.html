@@ -15,7 +15,7 @@
       <h2>E.Wallet</h2>
       <nav class="navbar navbar-expand-sm bg-light">
         <div class="container-fluid">
-          <a class="logo" href="">
+          <a class="logo" href="/html/menu.html">
             <img src="/img/logo.png" alt="" />
           </a>
           <ul class="navbar-nav">
@@ -28,6 +28,9 @@
             <li class="nav-item">
               <a class="nav-link" href="transaction.html">Transacciones</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Cerrar Sesíon</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -35,7 +38,9 @@
     <br />
     <div class="container">
       <h2>Depositar</h2>
-
+      <div class="row">
+        <span class="col">Su saldo actual es: </span><span id="resultado" class="col"></span>
+</div>
       <form id="deposit-form">
         <div class="form-group">
           <label for="monto">Monto a depositar:</label>
@@ -47,7 +52,8 @@
             name="monto"
           />
         </div>
-        <button type="submit" class="btn btn-primary">Realizar depósito</button>
+        <br>
+        <button type="submit" class="btn btn-primary" id="boton">Realizar depósito</button>
       </form>
       <p class="error-message"></p>
     </div>

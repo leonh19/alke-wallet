@@ -12,6 +12,12 @@ header {
   background-color: slateblue;
   color: white;
   text-align: left;
+  margin: auto;
+}
+
+.header h2{
+  margin-left: 10px;
+
 }
 
 .logo img {
@@ -63,11 +69,14 @@ div p {
   text-align: center;
 }
 
+
 .header nav div ul li a {
   color: black;
+
 }
 
 .header nav div ul li a:hover {
   transform: scale(1.1);
   color: blueviolet;
 }
+

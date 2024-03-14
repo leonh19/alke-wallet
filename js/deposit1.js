@@ -1,30 +1,32 @@
-$(document).ready(function() {
-    $("#deposit-form").submit(function(event) {
-        event.preventDefault();
+var resultado = 100000;
+$("#resultado").text(resultado);
 
-        var monto = $("#monto").val();
+$(document).ready(function () {
+  $("#deposit-form").submit(function (event) {
+    event.preventDefault();
 
-        // Validación del monto
-        if (monto === "" || isNaN(monto)) {
-            $(".error-message").text("Por favor, ingrese un monto válido");
-            return;
-        }
-        if (monto <= 0){
-            $(".error-message").text("Por favor, ingrese un monto válido");
-            return;
-        }
+    var monto = parseFloat($("#monto").val());
 
-        // Simulación de depósito (reemplazar con API real)
-        var saldoActual = parseFloat($("#saldo-cuenta").text());
-        var nuevoSaldo = saldoActual + parseFloat(monto);
-        $("#saldo-cuenta").text("S/. " + nuevoSaldo.toFixed(2));
+    // Validación del monto
+    if (monto === "" || isNaN(resultado)) {
+      $(".error-message").text("Por favor, ingrese un monto válido");
+      return;
+    }
+    if (monto <= 0) {
+      $(".error-message").text("Por favor, ingrese un monto válido");
+      return;
+    }
+    if (!isNaN(monto) && !isNaN(resultado) && monto > 0) {
+      resultado = monto + resultado;
+      $("#resultado").text(resultado);
+    }
 
-        // Mostrar mensaje de éxito
-        $(".error-message").text("Depósito realizado exitosamente");
+    // Mostrar mensaje de éxito
+    $(".error-message").text("Depósito realizado exitosamente");
 
-        // Redirigir al menú principal después de unos segundos
-        setTimeout(function() {
-            window.location.href = "menu.html";
-        }, 2000);
-    });
+    // Redirigir al menú principal después de unos segundos
+    setTimeout(function () {
+      window.location.href = "menu.html";
+    }, 2000);
+  });
 });

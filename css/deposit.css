@@ -17,6 +17,10 @@ header {
   text-align: left;
 }
 
+.header h2{
+  margin-left: 10px;
+
+}
 .logo img {
   display:block;
   width: 30%;
