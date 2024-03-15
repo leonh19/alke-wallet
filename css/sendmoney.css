@@ -20,6 +20,21 @@ header {
 
 }
 
+.menu{
+  justify-content: center;
+}
+
+.header nav div ul li a {
+  color: black;
+
+}
+
+.header nav div ul li a:hover {
+  transform: scale(1.1);
+  color: blueviolet;
+}
+
+
 .logo img {
   display: block;
   width: 30%;
@@ -70,13 +85,4 @@ div p {
 }
 
 
-.header nav div ul li a {
-  color: black;
-
-}
-
-.header nav div ul li a:hover {
-  transform: scale(1.1);
-  color: blueviolet;
-}
 
